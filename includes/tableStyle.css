@@ -1,0 +1,177 @@
+.prices_section {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prices_table {
+    box-shadow: black 1px 1px 5px;
+    border-radius: 2px;
+    text-align: center;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.prices_table thead tr{
+    border-bottom: rgb(72, 151, 255) 1px solid;
+    color: black;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font: 1.5em 'Rozha', Sans-serif;
+}
+
+.prices_table tr:nth-child(even) {
+    background: rgba(245, 245, 245, 1);
+}
+
+.prices_table a {
+    font: 1em 'Signika', Sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.prices_table tr td {
+    font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
+    padding: 5px;
+}
+
+.prices_fess_section {
+    min-width: 100%;
+}
+
+
+.prices_table_respon {
+    display: none;
+    box-shadow: black 1px 1px 5px;
+    text-align: center;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1em;
+}
+
+.apartment_td {
+    border-bottom: rgb(72, 151, 255) 1px solid;
+    color: black;
+    border-collapse: collapse;
+    padding: 8px 0 0 0;
+    margin: 0;
+    font: 1.5em 'Rozha', Sans-serif;
+}
+
+.prices_table_respon tr:nth-child(even) {
+    background: rgba(245, 245, 245, 1);
+}
+
+
+.prices_ul {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+#form_reservation {
+    width: 49%;
+}
+
+#form_reservation table {
+    width: 100%;
+    position: relative;
+}
+
+#form_reservation table tr {
+    width: 100%;
+    display: flex;
+}
+
+#form_reservation table tr td {
+    margin: 0 2px 0 2px;
+    flex: 1;
+}
+
+#form_reservation input, #form_reservation select {
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 4px;
+    margin: 6px;
+    width: 100%;
+    height: 35px;
+}
+
+#form_reservation textarea {
+    margin: 6px;
+    min-width: 100%;
+    border-radius: 4px;
+    height: 80px;
+    border: 1px solid rgb(181, 181, 181);
+}
+
+#form_reservation input[type=submit] {
+    width: 110px;
+    padding: 3px;
+    border: 1px solid #151515;
+    background: #151515;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    float: right;
+    height: 35px;
+}
+
+#form_reservation caption {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.forms_article {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+    .forms_article {
+        display: block;
+    }
+
+    #form_reservation {
+        min-width: 100%;
+    }
+
+    #form_reservation tr {
+        display: block;
+    }
+
+    .prices_table_respon {
+        display: table;
+    }
+
+    .prices_table {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .prices_ul {
+        list-style-type: circle;
+    }
+}
+
+/* Only for IE10 and up */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #form_reservation table tr {
+        display: table-row;
+    }
+
+    #form_reservation {
+        width: 41vw;
+    }
+}
