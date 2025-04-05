@@ -199,14 +199,14 @@ $formMessage = isset($_GET['f']) ? $_GET['f'] : "";;
     <article id="apartmentCalendarDiv">
         <h2>Kalendář obsazenosti</h2>
         <div>Zobrazit pro apartmán: 
-            <select>
-                <option onclick="ShowCalendar('https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FPrague&showPrint=0&hl=cs&showTabs=0&showCalendars=0&showTz=0&src=N2VkZmQyZDExNjlkMzU1ZDc0ZTJlOWNkMzBhMTJhOTFhYmEwOGQ0OTU3NjQzZGY1YjE0OWE4ZDNmY2RlNTNkNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E67C73');">Přízemí</option>
-                <option onclick="ShowCalendar('https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FPrague&showPrint=0&showTabs=0&showCalendars=0&showTz=0&hl=cs&src=YjAxZDYwODUwMmU2NzdmOTExOWIwOGQ4YTViZjliNDY1M2VhMzNjYTM2OTUyM2JlZmRlYmRkYjhhYjNjNjNlMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%239E69AF');">Apartmán 1</option>
-                <option onclick="ShowCalendar('https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FPrague&showPrint=0&showTabs=0&showCalendars=0&showTz=0&hl=cs&src=MmI2MjM4ZmVhNzRkMzEzYzBjMDgxYzk4MjBiNTZlNzAyZmYzMGRiMmMzN2U2MzhmYmQwZjZhNGRmNTIxNjA4M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D81B60');">Apartmán 2</option>
-                <option onclick="ShowCalendar('https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FPrague&showPrint=0&showTabs=0&showCalendars=0&showTz=0&hl=cs&src=OTVkZGNiMDQ4MTIzZTY4YjFhMDc4YmFmMWIwZWJhOGYzOTJiMzNkNjZlMDJjNjg2YWVkNGJkYTA5YTAzZGQzNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300');">Apartmán 3</option>
+            <select onChange="ShowCalendar(this);">
+                <option value='https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FPrague&showPrint=0&hl=cs&showTabs=0&showCalendars=0&showTz=0&src=N2VkZmQyZDExNjlkMzU1ZDc0ZTJlOWNkMzBhMTJhOTFhYmEwOGQ0OTU3NjQzZGY1YjE0OWE4ZDNmY2RlNTNkNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E67C73'>Přízemí</option>
+                <option value='https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FPrague&showPrint=0&showTabs=0&showCalendars=0&showTz=0&hl=cs&src=YjAxZDYwODUwMmU2NzdmOTExOWIwOGQ4YTViZjliNDY1M2VhMzNjYTM2OTUyM2JlZmRlYmRkYjhhYjNjNjNlMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%239E69AF'>Apartmán 1</option>
+                <option value='https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FPrague&showPrint=0&showTabs=0&showCalendars=0&showTz=0&hl=cs&src=MmI2MjM4ZmVhNzRkMzEzYzBjMDgxYzk4MjBiNTZlNzAyZmYzMGRiMmMzN2U2MzhmYmQwZjZhNGRmNTIxNjA4M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D81B60'>Apartmán 2</option>
+                <option value='https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FPrague&showPrint=0&showTabs=0&showCalendars=0&showTz=0&hl=cs&src=OTVkZGNiMDQ4MTIzZTY4YjFhMDc4YmFmMWIwZWJhOGYzOTJiMzNkNjZlMDJjNjg2YWVkNGJkYTA5YTAzZGQzNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300'>Apartmán 3</option>
             </select>
         </div>
-        <iframe id="iframeCalendar" style="margin: 2rem 0 2rem 0;" src="https://calendar.google.com/calendar/embed?height=500&wkst=2&ctz=Europe%2FPrague&showCalendars=0&showTz=0&showPrint=0&showTabs=0&mode=MONTH&title=Chalupa%20%20Vacov%20-%20P%C5%99%C3%ADzem%C3%AD&hl=cs&src=ODAwNTBlNmE1ZGQ0MmMwNGM4MWUyYjJmZjc3NDE2MzZkNzg5MTZiYWEyYzY3YTk3MzQzOTdjZTlhMGFiYmQyMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441"  width="100%" height="500" frameborder="0" scrolling="no"></iframe>    
+        <iframe id="iframeCalendar" style="margin: 2rem 0 2rem 0;" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FPrague&showPrint=0&hl=cs&showTabs=0&showCalendars=0&showTz=0&src=N2VkZmQyZDExNjlkMzU1ZDc0ZTJlOWNkMzBhMTJhOTFhYmEwOGQ0OTU3NjQzZGY1YjE0OWE4ZDNmY2RlNTNkNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E67C73"  width="100%" height="500" frameborder="0" scrolling="no"></iframe>    
     <article>
 
     <h2>Platební podmínky</h2>

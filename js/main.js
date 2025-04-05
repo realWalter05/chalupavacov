@@ -58,8 +58,8 @@ function ShowTerm(termId) {
     }
 }
 
-function ShowCalendar(iframeURL) {
+function ShowCalendar(selectObject) {
 
     let iframe = document.getElementById("iframeCalendar");
-    iframe.setAttribute("src", iframeURL);
+    iframe.setAttribute("src", selectObject.value);
 }
