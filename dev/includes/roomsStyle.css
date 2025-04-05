@@ -1,0 +1,106 @@
+.room_article {
+    max-width: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    float: left;
+}
+
+.room_info {
+    width: 46%;
+    padding: 0 0 0 1vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.room_info h2 {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    margin: 5px 0 5px 0;
+}
+
+.room_info ul {
+    list-style-type: circle;
+    margin: 0;
+    padding: 0 0 0 25px;
+}
+
+
+.room_info ul li {
+    padding: 3px;
+    width: 100%;
+    display: inline-block;
+}
+
+.room_info img {
+    background: #151515;
+}
+
+.ie_button {
+    display: none;
+    transform: scale(0.1);
+}
+
+.room_select {
+    padding: 5px;
+    margin: 6px;
+    text-align-last: center;
+    font-size: 2.0em;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(15, 15, 15, 1);
+    border: black 1px solid;
+    border-radius: 6px;
+}
+
+.room_select option {
+    font-size: .6em;
+    text-align: center;
+}
+
+.room_select option:hover {
+    box-shadow: 0 0 10px 100px #fff inset;
+}
+
+.room_select_section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+    .room_info {
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .room_gallery_div {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+/* Only for IE10 and up */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .room_select_section {
+        width: 84vw;
+    }
+
+    .room_info {
+        width: 45vw;
+    }
+
+    .ie_button {
+        display: block;
+        transform: scale(1);
+    }
+}
+
+@media screen and (-ms-high-contrast: none) and (max-width: 1200px) , (-ms-high-contrast: active) and (max-width: 1200px)  {
+    .room_info {
+        width: 84vw;
+    }
+}
