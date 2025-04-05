@@ -57,3 +57,9 @@ function ShowTerm(termId) {
         }
     }
 }
+
+function ShowCalendar(iframeURL) {
+
+    let iframe = document.getElementById("iframeCalendar");
+    iframe.setAttribute("src", iframeURL);
+}

@@ -196,8 +196,20 @@ $formMessage = isset($_GET['f']) ? $_GET['f'] : "";;
 
     </article>
 
-    <h2>Platební podmínky</h2>
+    <article id="apartmentCalendarDiv">
+        <h2>Kalendář obsazenosti</h2>
+        <div>Zobrazit pro apartmán: 
+            <select>
+                <option onclick="ShowCalendar('https://calendar.google.com/calendar/embed?height=500&wkst=2&ctz=Europe%2FPrague&showCalendars=0&showTz=0&showPrint=0&showTabs=0&mode=MONTH&title=Chalupa%20%20Vacov%20-%20P%C5%99%C3%ADzem%C3%AD&hl=cs&src=ODAwNTBlNmE1ZGQ0MmMwNGM4MWUyYjJmZjc3NDE2MzZkNzg5MTZiYWEyYzY3YTk3MzQzOTdjZTlhMGFiYmQyMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441');">Přízemí</option>
+                <option onclick="ShowCalendar('https://calendar.google.com/calendar/embed?height=500&wkst=2&ctz=Europe%2FPrague&showPrint=0&showTabs=0&showTz=0&title=Chalupa%20Vacov%20Apartm%C3%A1n%201&showCalendars=0&hl=cs&src=OWE4ZGU4ODY5YWU0YTJkMWY3NGY3YWI4MDFlNmJhYmRjNGI1ZjU0YTUxYmEwYzJkMDQxNzcwMTBmZGYzMGNhNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23C0CA33');">Apartmán 1</option>
+                <option onclick="ShowCalendar('https://calendar.google.com/calendar/embed?height=500&wkst=2&ctz=Europe%2FPrague&showPrint=0&showTz=0&showCalendars=0&hl=cs&showTabs=0&title=Chalupa%20Vacov%20Apartm%C3%A1n%202&src=ZTI2NjcwNGU0OGQzYTdmMGU0ZTBhZmEwMDBjN2JjZGEyMzMzMjZlMGU5MGE2ODI1ZjQzOGJkMDdkMzZhNDk2OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F6BF26');">Apartmán 2</option>
+                <option onclick="ShowCalendar('https://calendar.google.com/calendar/embed?height=500&wkst=2&ctz=Europe%2FPrague&showPrint=0&showTabs=0&showCalendars=0&showTz=0&hl=cs&title=Chalupa%20Vacov%20Apartm%C3%A1n%203&src=YTlhMzI4NWU1ZWQwZDM2ZjU2YTUxYmMyMDc4NGY5ZmJiMDE2ZDYxNzJmYzNiMmUzNzA0NzhmYTA4NDI0ZWEzOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB');">Apartmán 3</option>
+            </select>
+        </div>
+        <iframe id="iframeCalendar" style="margin: 2rem 0 2rem 0;" src="https://calendar.google.com/calendar/embed?height=500&wkst=2&ctz=Europe%2FPrague&showCalendars=0&showTz=0&showPrint=0&showTabs=0&mode=MONTH&title=Chalupa%20%20Vacov%20-%20P%C5%99%C3%ADzem%C3%AD&hl=cs&src=ODAwNTBlNmE1ZGQ0MmMwNGM4MWUyYjJmZjc3NDE2MzZkNzg5MTZiYWEyYzY3YTk3MzQzOTdjZTlhMGFiYmQyMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441"  width="100%" height="500" frameborder="0" scrolling="no"></iframe>    
+    <article>
 
+    <h2>Platební podmínky</h2>
     <p>
 
     Rezervace je platná po zaplacení zálohy ve výši 50% předem na účet 3472490267/0100 nebo složenkou.
