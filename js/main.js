@@ -59,7 +59,8 @@ function ShowTerm(termId) {
 }
 
 function ShowCalendar(selectObject) {
-
+    let selected = selectObject.options[selectObject.selectedIndex].value;
+    console.log(selected);
     let iframe = document.getElementById("iframeCalendar");
-    iframe.setAttribute("src", selectObject.value);
+    iframe.setAttribute("src", selected);
 }
