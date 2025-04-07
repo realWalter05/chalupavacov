@@ -198,6 +198,12 @@ footer a {
     display: none;
 }
 
+#iframeCalendar {
+    width: 60%;
+    height: 500px;
+    margin: 2rem 0 2rem 0;
+}
+
 @media screen and (max-width: 800px) {
     footer ul {
         margin: auto;
@@ -214,6 +220,10 @@ footer a {
     }
     .map_box {
         margin: auto;
+    }
+
+    #iframeCalendar {
+        width: 100%;
     }
 }
 

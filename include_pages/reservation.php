@@ -206,7 +206,7 @@ $formMessage = isset($_GET['f']) ? $_GET['f'] : "";;
                 <option value='https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FPrague&showPrint=0&showTabs=0&showCalendars=0&showTz=0&hl=cs&src=OTVkZGNiMDQ4MTIzZTY4YjFhMDc4YmFmMWIwZWJhOGYzOTJiMzNkNjZlMDJjNjg2YWVkNGJkYTA5YTAzZGQzNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300'>Apartmán 3</option>
             </select>
         </div>
-        <iframe id="iframeCalendar" style="margin: 2rem 0 2rem 0;" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FPrague&showPrint=0&hl=cs&showTabs=0&showCalendars=0&showTz=0&src=N2VkZmQyZDExNjlkMzU1ZDc0ZTJlOWNkMzBhMTJhOTFhYmEwOGQ0OTU3NjQzZGY1YjE0OWE4ZDNmY2RlNTNkNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E67C73"  width="100%" height="500" frameborder="0" scrolling="no"></iframe>    
+        <iframe id="iframeCalendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FPrague&showPrint=0&hl=cs&showTabs=0&showCalendars=0&showTz=0&src=N2VkZmQyZDExNjlkMzU1ZDc0ZTJlOWNkMzBhMTJhOTFhYmEwOGQ0OTU3NjQzZGY1YjE0OWE4ZDNmY2RlNTNkNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E67C73" frameborder="0" scrolling="no"></iframe>    
     <article>
 
     <h2>Platební podmínky</h2>
